@@ -1,12 +1,22 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+#include <cstdlib>
+#include <iostream>
 
-# Compiled Dynamic libraries
-*.so
+using namespace std;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+int main(int argc, char *argv[])
+{
+  int promedio = 0,numero;                                //Variables de tipo entro
+  
+  for(int i=1;i<=4;i++)                                       //Estructura de Control FOR
+  {
+     printf("Capture la cantidad %d:",i);                //imprime en pantalla el comentario deseado
+     scanf("%d",&numero);                                 //Espera que se Capture el numero en la variable numero
+     promedio += numero;                                  //Suma la cantidad en una variable llamada promedio
+   }
+ 
+   promedio/=5;                                              //Obtiene el promedio diviendo entre 5 la variable promedio
+   printf("\nEl promedio de las cantidades es %d",promedio);  
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
